@@ -1,0 +1,151 @@
+body {
+  background: #f0f0f0;
+}
+
+body, h1, p {
+  font-family: "Futura";
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #222222;
+}
+
+.stack > * {
+  display: inline-block;
+  padding: 10px;
+}
+
+.stack-js {
+  background-color: red;
+}
+
+.stack-css {
+  background-color: blue;
+}
+
+.stack-python {
+  background-color: green;
+}
+
+.stack-db {
+  background-color: yellow;
+}
+
+.stack-ffmpeg {
+  background-color: orange;
+}
+
+.stack-embedded {
+  background-color: pink;
+}
+
+.stack-java {
+  background-color: purple;
+}
+
+.content-wrapper {
+  float: right;
+  clear: left;
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 177px;
+  max-width: 80%;
+  padding-right: 5%;
+}
+
+
+#sidebar {
+  float: left;
+  background : #999999;
+  width: 10%;
+  height: 100%;
+  box-shadow: 3px 2px 5px #446D8D;
+}
+
+#sidebar ul {
+  list-style-type:none;
+  padding: 10px;
+}
+
+.vimeo-player {
+  width: 500px;
+  height: 313px;
+}
+
+.example-img.large {
+  width: 100%;
+}
+
+.example-img.small {
+  width: 50%;
+}
+
+.img-description {
+  opacity: .7;
+}
+
+.description {
+  opacity: 1;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.row:before {
+  display: table;
+  content: " ";
+}
+
+footer {
+  clear: both;
+}
+
+.row:after {
+  display: table;
+  content: " ";
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: #5555cc;
+  text-decoration: none;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 966px) {
+  #sidebar {
+    display: none;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+    padding: 0% 5%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .vimeo-player {
+    width: 300px;
+    height: 188px;
+  }
+}
+
