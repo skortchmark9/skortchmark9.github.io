@@ -22,8 +22,6 @@ $(document).ready( function() {
         }
     });
 
-    var hideStats = true;
-    if (hideStats) return;
     for ( var key in stacks) {
         var $div = $('<div class=' + key + '>' + key.replace('stack-', '') + ' ' + stacks[key] + '</div>');
         $('.stats').append($div);
