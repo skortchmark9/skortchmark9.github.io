@@ -17,31 +17,32 @@ body, h1, p {
 }
 
 .stack-js {
-  background-color: red;
+  background-color: hsla(145, 100%, 17%, 0.44);;
 }
 
 .stack-css {
-  background-color: blue;
+  background-color: #e5f5f9;
 }
 
 .stack-python {
-  background-color: green;
+  background-color: #ccece6;
+
 }
 
 .stack-db {
-  background-color: yellow;
+  background-color: #99d8c9;
 }
 
 .stack-ffmpeg {
-  background-color: orange;
+  background-color: #66c2a4;
 }
 
 .stack-embedded {
-  background-color: pink;
+  background-color: #41ae76;
 }
 
 .stack-java {
-  background-color: purple;
+  background-color: #238b45;
 }
 
 .content-wrapper {
@@ -50,15 +51,15 @@ body, h1, p {
   margin-left:  auto;
   margin-right:  auto;
   margin-top: 177px;
-  max-width: 80%;
-  padding-right: 5%;
+  max-width: 75%;
+  margin: 0 5%;
 }
 
 
 #sidebar {
   float: left;
-  background : #999999;
-  width: 10%;
+  background : #eeddee;
+  width: 15%;
   height: 100%;
   box-shadow: 3px 2px 5px #446D8D;
 }
@@ -136,8 +137,8 @@ h3 {
   }
 
   .content-wrapper {
-    max-width: 100%;
-    padding: 0% 5%;
+    max-width: 90%;
+    margin: 0 5%;
     float: none;
   }
 }
