@@ -10,10 +10,11 @@ $(document).ready( function() {
 
     $.localScroll({filter : '.smoothScroll'});
 
+
+    //Make the list of tags.
     var stacks = {}
     $('.stack-item').each(function(idx, elt) {
         var type = elt.className.replace('stack-item ', '')
-
 
         if (stacks[type] ||  stacks[type] === 0) {
             stacks[type] += 1;
