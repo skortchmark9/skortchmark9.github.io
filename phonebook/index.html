@@ -1,0 +1,103 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="Phonebook">
+	<meta name="author" content="Sam Kortchmar">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<title>The Phone Book</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="../lib/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="../lib/jquery-ui-1.8.20.custom.min.js"></script>
+	<script type="text/javascript" src="../lib/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="../lib/modernizr.2.5.3.min.js"></script>
+	<script type="text/javascript" src="../lib/hash.js"></script>
+	<script type="text/javascript" src="../lib/handlebars-v4.0.5.js"></script>
+	<script type="text/javascript" src="../node_modules/faker/build/build/faker.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<div id="canvas">
+	<div id="book-zoom">
+		<div class="sj-book">
+			<div depth="5" class="hard">
+				<div class="side"></div>
+			</div>
+			<div depth="5" class="hard front-side">
+				<div class="depth"></div>
+			</div>
+			<div class="own-size even"></div>
+			<div class="hard fixed back-side p111">
+				<div class="depth"></div>
+			</div>
+			<div class="hard p112"></div>
+		</div>
+	</div>
+</div>
+
+<script id="entry-template" type="text/x-handlebars-template">
+	<div class="book-content">
+		<div class="header">
+
+			<span class="page-info">
+				<span class="page-number">{{pageInfo.number}}</span>
+			 	<span class="page-span">{{pageInfo.range}}</span><!--
+			 --><span class="page-letter">{{pageInfo.letter}}</span>
+		 	</span>
+			<hr/>
+		</div>
+
+		<div class="page-body">
+
+		  {{#each listings}}
+			<div class={{this.class}}>
+				<div class="listing-person">
+					<span class="name">
+						{{#unless this.indented}}
+							<span class="last">{{this.last}}</span>
+						{{/unless}}
+						 {{this.first}}
+					</span>
+					<span class="address"> {{this.address}} </span>
+					&hellip;&hellip;&hellip;&hellip;&hellip;
+					&hellip;&hellip;&hellip;&hellip;&hellip;
+				</div>
+				<a href="tel:{{this.tel}}"><span class="tel">
+				{{this.tel}}
+				</span>
+				</a>
+			</div>
+		  {{/each}}
+
+		</div>
+	</div>
+</script>
+
+<script type="text/javascript">
+
+// Hide canvas
+$('#canvas').css({visibility: 'hidden'});
+window.ARROW_KEYS = true;
+// Load turn.js
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['../lib/turn.min.js'],
+	nope: ['../lib/turn.html4.min.js', 'css/phonebook-html4.css'],
+	both: ['js/phonebook.js', 'css/jquery.ui.css', 'css/phonebook.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+
+@font-face {
+  font-family: 'Bell-Address';
+  src: url('../fonts/Bell Centennial/bell-centennial-lt-address.ttf');
+}
+
+@font-face {
+  font-family: 'Bell-Subcaption';
+  src: url('../fonts/Bell Centennial/bell-centennial-lt-subcaption.ttf');
+}
+
+@font-face {
+  font-family: 'Bell-Name-Num';
+  src: url('../fonts/Bell Centennial/bell-centennial-name-and-number-bt.ttf');
+}
+
+body, ul, table, form {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+	background: url('../pics/splash-bg.jpg') bottom left repeat-x;
+}
+
+html, body {
+	height: 100%;
+}
+
+.animated {
+	-webkit-transition:margin-left 0.2s ease-in-out;
+	-moz-transition:margin-left 0.2s ease-in-out;
+	-o-transition:margin-left 0.2s ease-in-out;
+	-ms-transition:margin-left 0.2s ease-in-out;
+	transition:margin-left 0.2s ease-in-out;
+}
+
+#canvas {
+	width: 960px;
+	height: 600px;
+	margin: 100px auto;
+}
+
+#book-zoom {
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-ms-transition: -ms-transform 1s;
+	-o-transition: -o-transform 1s;
+	transition: transform 1s;
+}
+
+.sj-book {
+	width: 960px;
+	height: 600px;
+}
+
+.sj-book .book-content {
+       font-family: "Bell-Address";
+       margin: 0 10px;
+       font-size: 8px;
+       height: 99%;
+       overflow-y: hidden;
+}
+
+
+.sj-book .own-size {
+   width: 460px;
+   height: 582px;
+   background-color:white;
+   overflow:hidden;
+}
+
+.sj-book .shadow {
+	-webkit-transition: -webkit-box-shadow 0.5s;
+	-moz-transition: -moz-box-shadow 0.5s;
+	-o-transition: -webkit-box-shadow 0.5s;
+	-ms-transition: -ms-box-shadow 0.5s;
+
+	-webkit-box-shadow:0 0 10px #999;
+	-moz-box-shadow:0 0 10px #999;
+	-ms-box-shadow:0 0 10px #999;
+	-o-box-shadow:0 0 10px #999;
+	box-shadow:0 0 10px #999;
+}
+
+.sj-book .page {
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+
+.sj-book .loader {
+	background-image:url(../pics/loader.gif);
+	width:22px;
+	height:22px;
+	position:absolute;
+	top:280px;
+	left:219px;
+}
+
+.header {
+	font-family: 'Bell-Name-Num';
+	margin-top: 20px;
+}
+
+.sj-book .odd .header {
+	text-align: right;
+}
+
+.sj-book .page-span {
+    padding: 3px 28px;
+	text-transform: uppercase;
+	background-color: black;
+	color: white;
+}
+
+.sj-book .page-number {
+	text-transform: uppercase;
+}
+
+.sj-book .page-letter {
+	color: black;
+	text-transform: uppercase;
+    padding: 1px 3px;
+    border: 2px solid black;
+}
+
+hr {
+	clear: right;
+    background-color: black;
+    height: 3px;
+    border: none;
+    margin: 0px;
+    margin-bottom: 2px;
+}
+
+.page-body {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.page-body .name, .tel {
+  font-family: 'Bell-Name-Num';		
+  flex-grow: 2;
+  align-self: flex-end;
+  white-space: nowrap;
+}
+
+.listing, .listing-indented {
+	display: flex;
+}
+
+.listing-indented {
+	margin-left: 6px;
+}
+
+.listing-person {
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.page-body .last {
+	text-transform: uppercase;
+}
+
+.page-body .address {
+  font-family: 'Bell-Address';
+  font-size: 6px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.sj-book .p1,
+.sj-book .p2,
+.sj-book .p3, 
+.sj-book .p111, 
+.sj-book .p112 {
+	background-color:white;
+	background-image:url(../pics/book-covers-shopped.jpg) !important;
+}
+
+.sj-book .p1 {
+	background-position:0 0;
+}
+
+.sj-book .p1 .side {
+	width:5px;
+	height:600px;
+	position:absolute;
+	top:0;
+	left:475px;
+
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #bbb), color-stop(0.5,  #ddd), color-stop(1,  #bbb));
+	background-image:-webkit-linear-gradient(left, #bbb, #ddd, #bbb);
+	background-image:-moz-linear-gradient(left, #bbb, #ddd, #bbb);
+	background-image:-ms-linear-gradient(left, #bbb, #ddd, #bbb);
+	background-image:-o-linear-gradient(left, #bbb, #ddd, #bbb);
+	background-image:linear-gradient(left, #bbb, #ddd, #bbb);
+	
+	-webkit-transform:rotateY(-90deg);
+	-moz-transform:rotateY(-90deg);
+	-o-transform:rotateY(-90deg);
+	-ms-transform:rotateY(-90deg);
+	transform:rotateY(-90deg);
+
+	-webkit-transform-origin:top right;
+	-moz-transform-origin:top right;
+	-o-transform-origin:top right;
+	-ms-transform-origin:top right;
+	transform-origin:top right;
+	z-index:100000;
+
+}
+
+.sj-book-transform div[page="1"] > div, .sj-book-transform div[page="2"] > div {
+	overflow:visible !important;
+}
+
+.sj-book .depth {
+	background-image:url(../pics/pages-depth.png);
+	position:absolute;
+	top:7px;
+	width:16px;
+	height:590px;
+}
+
+.sj-book .front-side .depth {
+	left:4px;
+	background-position:0 0;
+}
+
+.sj-book .back-side .depth {
+	right:4px;
+	background-position:right 0;
+}
+
+.sj-book .p2 {
+	background-position: -480px 0 !important;
+}
+
+.sj-book .p3 {
+	background-position: -1920px 0 !important;
+}
+
+.sj-book .p111 {
+	background-position: -960px 0 !important;
+}
+
+.sj-book .p112 {
+	background-position: -1440px 0 !important;
+}
+
+.sj-book .hard {
+	width: 480px;
+	height: 600px;
+	background-color:white;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	-ms-box-shadow:none;
+	box-shadow:none;
+}
+
+.sj-book .page-wrapper {
+	-webkit-perspective:2000px;
+	-moz-perspective: 2000px;
+	-ms-perspective: 2000px;
+	perspective: 2000px;
+}
+
+.sj-book .even {
+	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+	background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+}
+
+.sj-book .odd {
+	background:-webkit-gradient(linear, right top, left top, color-stop(0.95, #fff), color-stop(1, #cacaca));
+	background-image:-webkit-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-moz-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-ms-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:-o-linear-gradient(right, #fff 95%, #cacaca 100%);
+	background-image:linear-gradient(right, #fff 95%, #cacaca 100%);
+}
+
+.ie8 .sj-book .even,
+.ie9 .sj-book .even {
+	background-image:url(../pics/gradient-page-left.jpg);
+	background-position:right top;
+	background-repeat:repeat-y;
+}
+
+.ie8 .sj-book .odd,
+.ie9 .sj-book .odd {
+	background-image:url(../pics/gradient-page-right.jpg);
+	background-position:left top;
+	background-repeat:repeat-y;
+}
