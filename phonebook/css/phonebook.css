@@ -28,6 +28,33 @@ html, body {
 	height: 100%;
 }
 
+.message {
+	margin: 20px;
+}
+
+.message h1 {
+	font-family: 'Bell-Address';
+	font-size: 30px;
+	display: inline-block;
+}
+
+.message .invert {
+	color: white;
+	background-color: black;
+	padding: 3px 10px;
+	padding-right: 0;
+	text-align: center;
+	margin: 0;
+}
+
+.message .page-letter {
+	color: black;
+	font-size: 30px;
+    padding: 0px 13px;
+	background-color: white;
+	border: 3px solid black;
+}
+
 .animated {
 	-webkit-transition:margin-left 0.2s ease-in-out;
 	-moz-transition:margin-left 0.2s ease-in-out;
