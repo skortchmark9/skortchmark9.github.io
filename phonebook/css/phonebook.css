@@ -36,6 +36,7 @@ html, body {
 	font-family: 'Bell-Address';
 	font-size: 30px;
 	display: inline-block;
+	margin: 0;
 }
 
 .message .invert {
