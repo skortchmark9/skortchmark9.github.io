@@ -53,7 +53,6 @@ function loadApp() {
 	// Flipbook
 	flipbook.turn({
 		elevation: 50,
-		acceleration: !isChrome(),
 		autoCenter: true,
 		gradients: true,
 		duration: 1000,
@@ -76,7 +75,7 @@ function loadApp() {
 						e.preventDefault();
 						return;
 					}
-				} else if (page>3 && page<pages-3) {
+				} else if (page > 3 && page<pages - 3) {
 					if (currentPage==1) {
 						book.turn('page', 2).turn('stop').turn('page', page);
 						e.preventDefault();
@@ -141,13 +140,4 @@ function loadApp() {
 	// Show canvas
 
 	$('#canvas').css({visibility: ''});
-}
-
-function isChrome() {
-
-	// Chrome's unsolved bug
-	// http://code.google.com/p/chromium/issues/detail?id=128488
-
-	return navigator.userAgent.indexOf('Chrome')!=-1;
-
 }

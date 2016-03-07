@@ -16,6 +16,12 @@ body, h1, p {
   padding: 10px;
 }
 
+.stack-item {
+  border: 3px solid white;
+  margin: 3px;
+}
+
+/*
 .stack-js {
   background-color: hsla(145, 100%, 17%, 0.44);;
 }
@@ -43,7 +49,7 @@ body, h1, p {
 
 .stack-java {
   background-color: #238b45;
-}
+}*/
 
 .content-wrapper {
   float: right;

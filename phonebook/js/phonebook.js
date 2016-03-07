@@ -41,8 +41,6 @@ function populateListings() {
 populateListings();
 
 
-
-
 function updateDepth(book, newPage) {
 
 	var page = book.turn('page'),
@@ -141,21 +139,4 @@ function addPage(page, book) {
 		}
 
 	}
-}
-
-function numberOfViews(book) {
-	return book.turn('pages') / 2 + 1;
-}
-
-function getViewNumber(book, page) {
-	return parseInt((page || book.turn('page'))/2 + 1, 10);
-}
-
-function isChrome() {
-
-	// Chrome's unsolved bug
-	// http://code.google.com/p/chromium/issues/detail?id=128488
-
-	return navigator.userAgent.indexOf('Chrome')!=-1;
-
 }

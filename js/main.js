@@ -16,11 +16,8 @@ $(document).ready( function() {
     $('.stack-item').each(function(idx, elt) {
         var type = elt.className.replace('stack-item ', '')
 
-        if (stacks[type] ||  stacks[type] === 0) {
-            stacks[type] += 1;
-        } else {
-            stacks[type] = 1;
-        }
+        stacks[type] = stacks[type] || 0;
+        stacks[type]++;
     });
 
     for ( var key in stacks) {
