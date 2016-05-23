@@ -11,6 +11,10 @@ body, h1, p {
   color: #222222;
 }
 
+.stack {
+  padding: 0px;
+}
+
 .stack > * {
   display: inline-block;
   padding: 10px;
@@ -21,58 +25,10 @@ body, h1, p {
   margin: 3px;
 }
 
-/*
-.stack-js {
-  background-color: hsla(145, 100%, 17%, 0.44);;
-}
-
-.stack-css {
-  background-color: #e5f5f9;
-}
-
-.stack-python {
-  background-color: #ccece6;
-
-}
-
-.stack-db {
-  background-color: #99d8c9;
-}
-
-.stack-ffmpeg {
-  background-color: #66c2a4;
-}
-
-.stack-embedded {
-  background-color: #41ae76;
-}
-
-.stack-java {
-  background-color: #238b45;
-}*/
-
 .content-wrapper {
-  float: right;
-  clear: left;
-  margin-left:  auto;
-  margin-right:  auto;
-  margin-top: 177px;
-  max-width: 75%;
-  margin: 0 5%;
-}
-
-
-#sidebar {
-  float: left;
-  background : #F0F0F0;
-  width: 15%;
-  height: 100%;
-  box-shadow: 3px 2px 5px #446D8D;
-}
-
-#sidebar ul {
-  list-style-type:none;
-  padding: 10px;
+  margin-top: 40px;
+  margin-left:  20%;
+  margin-right:  20%;
 }
 
 .vimeo-player {
@@ -81,7 +37,7 @@ body, h1, p {
 }
 
 .example-img.large {
-  width: 100%;
+  width: 80%;
 }
 
 .example-img.small {
@@ -94,8 +50,7 @@ body, h1, p {
 
 .description {
   opacity: 1;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin: 2.5%;
 }
 
 .row:before {
@@ -138,9 +93,6 @@ h3 {
 }
 
 @media screen and (max-width: 966px) {
-  #sidebar {
-    display: none;
-  }
 
   .content-wrapper {
     max-width: 90%;

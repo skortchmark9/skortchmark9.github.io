@@ -6,32 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <link type='text/css' rel='stylesheet' href='home.css'>
-   <link rel="shortcut icon"
-    href="/favicon.ico"
-    type="image/x-icon" />
-    <script src="js/jquery-latest.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/plugins/jquery.scrollTo.min.js"></script>
-    <script src="js/plugins/jquery.localScroll.min.js"></script>
-    <nav id="sidebar">
-        <ul>
-            <li><a href="#" class="smoothScroll about">About</a></li>
-            <li><a href="#Roommates" class="smoothScroll">Roommates</a></li>
-            <li><a href="#Hack@Brown16" class="smoothScroll">Hack@Brown 2016</a></li>
-            <li><a href="#TimesTrailers" class="smoothScroll">Times Trailers</a></li>
-            <li><a href="#StopNFrisk" class="smoothScroll">Stop And Frisk</a></li>
-            <li><a href="#CookieMonster" class="smoothScroll">Cookie Monster</a></li>
-            <li><a href="#LunchDate" class="smoothScroll">Lunch Date</a></li>
-            <li><a href="#PixelCraft" class="smoothScroll">PixelCraft</a></li>
-            <li><a href="#Hack@Brown15" class="smoothScroll">Hack@Brown 2015</a></li>
-            <li><a href="#CityMap" class="smoothScroll">City Map</a></li>
-            <li><a href="#Maps" class="smoothScroll">Maps</a></li>
-            <li><a href="#AudioFlashcards" class="smoothScroll">Audio Flashcards</a></li>
-        </ul>
-        <div class="stats">
-            Mentioned Tags:
-        </div>
-    </nav>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -55,21 +30,22 @@
                 <div class="Program">
                     <h3><a href="http://146lloy.de">Keep Track of My Roommates</a></h3>
                     <div class="description">
-                    A simple webapp hooked up to a Particle Core - roommates check in and check out online or using a hardware interface.
+                    A simple webapp hooked up to a Particle Core - roommates check in and check out online or using a hardware interface or online. Useful for when we are locked out!
                     </div>
                     <div class="example">
                         <img class="example-img small" src="images/Roommates.png">
                     </div>
 
                     <ul class="stack">
-                        <li class="stack-item stack-embedded">Particle</li>
+                        <li class="stack-item stack-embedded">Arduino</li>
+                        <li class="stack-item stack-embedded">C</li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <a name="Hack@Brown16"></a>
                 <div class="Program">
-                    <h3><a href="http://hackatbrown.org">Hack At Brown Website 2016</a></h3>
+                    <h3><a href="http://2016.hackatbrown.org">Hack At Brown Website 2016</a></h3>
                     <div class="description">
                         Currently leading the H@B dev team. Hosted on Google App Engine, using Google Cloud SQL. I built the whole infrastructure of the app. A lot of cool usability stuff including: JS unit tests, functional testing with selenium, python unit testing. Linting, hinting, and tests employed in push hooks to keep code clean. We write isolated CommonJS modules and Browserify them so we serve one JS file per page. We work in an agile fashion, using a scrum-style Trello board.
                     </div>
@@ -85,6 +61,7 @@
                         <li class="stack-item stack-js">jQuery Deferred</li>
                         <li class="stack-item stack-js">Three.js</li>
                         <li class="stack-item stack-js">Gulp</li>
+                        <li class="stack-item stack-js">React</li>
                         <li class="stack-item stack-db">SQL</li>
                         <li class="stack-item stack-python">Python WSGI</li>
                         <li class="stack-item stack-python">Selenium</li>
@@ -96,8 +73,8 @@
                 <a name="TimesTrailers"></a>
                 <div class="Program">
                     <h3>Times Trailers</h3>
-                    <div class="description">
-                        <p>During my internship at the New York Times, I built a tool to generate videos and GIFs automatically from New York Times articles. The videos are intelligently generated, but we also built a fully-featured in-browser video editor to allow content producers to tweak them. We create the videos on the front end but convert them on-the-fly on the backend: we use pipe an incoming video stream through FFMPEG and straight out again into the response object. This makes the application as a whole very scalable.</p>
+                    <div>
+                        <p class="description">During my internship at the New York Times, I built a tool to generate videos and GIFs automatically from New York Times articles. The videos are intelligently generated, but we also built a fully-featured in-browser video editor to allow content producers to tweak them. We create the videos on the front end but convert them on-the-fly on the backend: we use pipe an incoming video stream through FFMPEG and straight out again into the response object. This makes the application as a whole very scalable.</p>
                     <div class="example">
                         <img class="example-img small" src="images/tts.gif">
                         <div class="img-description">The Times is using this project internally.</div>
@@ -177,7 +154,7 @@
             <div class="row">
                 <a name="Hack@Brown15"></a>
                 <div class="Program">
-                    <h3><a href="http://hackatbrown.org">Hack At Brown Website 2015</a></h3>
+                    <h3><a href="http://2015.hackatbrown.org">Hack At Brown Website 2015</a></h3>
                     <div class="description">
                         <p>I am one of the most active members of the hackatbrown webdev team. Our website serves over 2200 applicants.</p>
                     </div>
