@@ -2,6 +2,24 @@ body {
   background: #f0f0f0;
 }
 
+.splash {
+  height: 100vh;
+} 
+
+.splash > div {
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
 body, h1, p {
   font-family: "Futura";
   font-weight: normal;
@@ -68,16 +86,11 @@ footer {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 3em;
   font-weight: 300;
   margin: 0 0 20px 0;
 }
 
-.lead {
-  font-size: 21px;
-  font-weight: 200;
-  margin-bottom: 20px;
-}
 
 p {
   margin: 0 0 10px;
@@ -101,10 +114,54 @@ h3 {
   }
 }
 
+
+
 @media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2em;
+  } 
+
   .vimeo-player {
     width: 300px;
     height: 188px;
   }
 }
 
+@media screen and (max-width: 375px) {
+  .intro {
+    border: none;
+  }
+}
+
+@media screen and (max-height: 412px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .intro {
+    border: none;
+  }
+}
+
+
+
+.chevron {
+  margin: auto 10px;
+}
+.chevron::before {
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.45em;
+  position: relative;
+  top: 0.15em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.45em;
+}
+
+.chevron.bottom::before {
+  top: 3px;
+  transform: rotate(135deg);
+}
