@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>
-                        Full Stack Human: <a href="/Resume.pdf">Resume</a> | 
+                        Full Stack Human<br><a href="/Resume.pdf">Resume</a> | 
                         <a href="http://github.com/skortchmark9">Github</a>
                     </h1>
                     <hr>
@@ -26,11 +26,48 @@
             </div>
             <hr>
             <div class="row">
+                <a name="Music Flyer"></a>
+                <div class="Program">
+                    <h3>Music Flyer</h3>
+                    <div class="description">
+                        Using the Oculus Rift, I built an app that lets you "fly through" a MIDI song, controlling your ship with the position of your head. It's kinda like guitar hero in VR. If you have a mac and an oculus, you can get the app <a href="https://drive.google.com/open?id=0B8WB1s5VDkITV3dOVUlWbVh4eU0">here</a>!
+                    </div>
+                    <div class="example">
+                        <img class="example-img small" src="images/Music Flyer.png">
+                    </div>
+
+                    <ul class="stack">
+                        <li class="stack-item stack-music">MIDI</li>
+                        <li class="stack-item stack-vr">Oculus</li>
+                        <li class="stack-item stack-vr">Unity</li>
+                        <li class="stack-item stack-vr">C#</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <a name="Polyphonic Tuner"></a>
+                <div class="Program">
+                    <h3><a href="https://github.com/SDooman/polyphonic_tuner">Polyphonic Tuner</a></h3>
+                    <div class="description">
+                        This is a neat little Arduino project which turns your arduino into a <em>polyphonic tuner</em>.
+                        The tuner tells you what chord you are playing! Works with all MIDI instruments and it has a passthrough mode so that you can plug it into an existing setup without needing a splitter cable.
+                    </div>
+                    <div class="example">
+                        <img class="example-img small" src="images/auduino wiring.png">
+                    </div>
+
+                    <ul class="stack">
+                        <li class="stack-item stack-music">MIDI</li>
+                        <li class="stack-item stack-embedded">Arduino</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
                 <a name="Roommates"></a>
                 <div class="Program">
-                    <h3><a href="http://146lloy.de">Keep Track of My Roommates</a></h3>
+                    <h3><a href="http://146lloy.de">146 Lloyd</a></h3>
                     <div class="description">
-                    A simple webapp hooked up to a Particle Core - roommates check in and check out online or using a hardware interface or online. Useful for when we are locked out!
+                    I build a website for my house in college. I hooked it up to a Particle Core so that my roommates could check in and out of the house. Useful for when we are locked out!
                     </div>
                     <div class="example">
                         <img class="example-img small" src="images/Roommates.png">
@@ -58,7 +95,6 @@
                         <li class="stack-item stack-js">CommonJS</li>
                         <li class="stack-item stack-css">SCSS</li>
                         <li class="stack-item stack-css">Semantic UI</li>
-                        <li class="stack-item stack-js">jQuery Deferred</li>
                         <li class="stack-item stack-js">Three.js</li>
                         <li class="stack-item stack-js">Gulp</li>
                         <li class="stack-item stack-js">React</li>
@@ -106,48 +142,6 @@
                         <li class="stack-item stack-python">Flask</li>
                         <li class="stack-item stack-js">jQuery</li>
                         <li class="stack-item stack-db">SQL</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <a name="CookieMonster"></a>
-                <div class="Program">
-                    <a href="https://github.com/skortchmark9/hackumass"><h3>Cookie Monster / Galletine</h3></a>
-                    <div class="description">
-                        <p>Crowd-controlled cookie crushing. Websockets, Streaming Video, Intel Edison.</p>
-                    </div>
-                    <ul class="stack">
-                        <li class="stack-item stack-js">Node.js</li>
-                        <li class="stack-item stack-js">Socket.IO</li>
-                        <li class="stack-item stack-embedded">Intel Edison</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <a name="LunchDate"></a>
-                <div class="Program">
-                    <a href="https://github.com/skortchmark9/LunchDate"><h3>Lunch Date</h3></a>
-                    <div class="description">
-                        <p>This is a little app to help you pair off members of your team for lunch dates.</p>
-                    </div>
-                    <ul class="stack">
-                        <li class="stack-item stack-js">AngularJS</li>
-                        <li class="stack-item stack-js">Node.js</li>
-                        <li class="stack-item stack-css">Bootstrap</li>
-                        <li class="stack-item stack-db">Mongo</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <a name="PixelCraft"></a>
-                <div class="Program">
-                    <h3>PixelCraft</h3>
-                    <div class="description">
-                        <p>This is the beginning of a game which allows you to draw your own sprites to overcome obstacles.</p>
-                    </div>
-                    <ul class="stack">
-                        <li class="stack-item stack-js">Node.js</li>
-                        <li class="stack-item stack-db">Mongo</li>
                     </ul>
                 </div>
             </div>
@@ -221,15 +215,57 @@
                 <div class="UX">
                     <h3><a href="https://github.com/puppyofkosh/cs032FlashCard">Audio Flashcards</a></h3>
                     <div class="description">
-                        <p>This project (Java) is built to make creating, organizing, and sharing audio flashcards easy. It consists of an EC2-hosted server and a client application. The backend uses a lightweight H2 database for storing cards and their tags. It allows you to import cards in several ways. When you're finished, you can export the cards as an iTunes playlist or as MP3s and sync with your phone. I designed and coded the interface and the server/client connections, among other things.</p>
+                        <p>One of my first projects, it had a pretty large feature set. Hosted on EC2, and with a java swing client app, The backend uses a lightweight H2 database for storing cards and their tags. It allows you to import cards in several ways. When you're finished, you can export the cards as an iTunes playlist or as MP3s to sync with your phone.</p>
                     </div>
                     <ul class="stack">
-                        <li class="stack-item stack-java">Java Swing</li>
+                        <li class="stack-item stack-java">Java</li>
                         <li class="stack-item stack-java">Guava</li>
                         <li class="stack-item stack-db">SQLite</li>
                     </ul>
                     <div class="example"><img class="example-img large" src="images/Audio Flash Cards/AFC1.png"></div>
                     <div class="example"><img class="example-img large" src="images/Audio Flash Cards/AFC2.png"></div>
+                </div>
+            </div>
+            <div class="row">
+                <a name="CookieMonster"></a>
+                <div class="Program">
+                    <a href="https://github.com/skortchmark9/hackumass"><h3>Cookie Monster / Galletine</h3></a>
+                    <div class="description">
+                        <p>Crowd-controlled cookie crushing. Websockets, Streaming Video, Intel Edison.</p>
+                    </div>
+                    <ul class="stack">
+                        <li class="stack-item stack-js">Node.js</li>
+                        <li class="stack-item stack-js">Socket.IO</li>
+                        <li class="stack-item stack-embedded">Intel Edison</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <a name="LunchDate"></a>
+                <div class="Program">
+                    <a href="https://github.com/skortchmark9/LunchDate"><h3>Lunch Date</h3></a>
+                    <div class="description">
+                        <p>This is a little app to help you pair off members of your team for lunch dates.</p>
+                    </div>
+                    <ul class="stack">
+                        <li class="stack-item stack-js">AngularJS</li>
+                        <li class="stack-item stack-js">Node.js</li>
+                        <li class="stack-item stack-css">Bootstrap</li>
+                        <li class="stack-item stack-db">Mongo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <a name="PixelCraft"></a>
+                <div class="Program">
+                    <h3>PixelCraft</h3>
+                    <div class="description">
+                        <p>This is the beginning of a game which allows you to draw your own sprites to overcome obstacles.</p>
+                    </div>
+                    <ul class="stack">
+                        <li class="stack-item stack-js">Node.js</li>
+                        <li class="stack-item stack-db">Mongo</li>
+                    </ul>
                 </div>
             </div>
         </div>
